@@ -1,8 +1,9 @@
 import express from 'express'
 import usuariosRoutes from './routes/usuariosRoutes.js'
-
+import cors from 'cors'
 
 const app = express()
+app.use(cors())
 app.use(express.json())
 const PORT = 5000
 
