@@ -13,11 +13,6 @@ app.get('/', (req, res) => {
 })
 
 
-
-app.get('/API/usuarios/:id', (req, res) => {
-    res.send('ONTENGO un usuario')
-})
-
 app.post('/API/usuarios', (req, res) => {
     console.log(req.body)
     res.send('crear un usuario')

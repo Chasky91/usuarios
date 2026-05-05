@@ -3,6 +3,7 @@ import  usuariosRouter from '../controllers/usuariosController.js'
 
 const  userRouter = Router()
 
-userRouter.get("/", usuariosRouter.obtener)
+userRouter.get("/", usuariosRouter.obtenerTodos)
+userRouter.get("/:id", usuariosRouter.obtenerUno)
 
 export default userRouter
